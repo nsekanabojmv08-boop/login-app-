@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f0f0f0;
+      margin: 0;
+    }
+
+    .header {
+      background: green;
+      color: white;
+      padding: 15px;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .box {
+      background: white;
+      width: 250px;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px gray;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      background: #e6ffe6;
+    }
+
+    .logout {
+      background: red;
+      color: white;
+    }
+
+    .logout:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h2>Welcome to Dashboard</h2>
+  </div>
+
+  <div class="container">
+
+    <!-- START LEARNING -->
+    <div class="box" onclick="startLearning()">
+      <h3>📘 Start Learning</h3>
+      <p>Go to lessons and study materials</p>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="box" onclick="aboutUs()">
+      <h3>ℹ️ About Us</h3>
+      <p>Learn more about this platform</p>
+    </div>
+
+    <!-- LOGOUT -->
+    <div class="box logout" onclick="logout()">
+      <h3>🚪 Logout</h3>
+      <p>Exit your account safely</p>
+    </div>
+
+  </div>
+
+  <script>
+    function startLearning() {
+      alert("Opening learning section...");
+      window.location.href = "learning.html";
+    }
+
+    function aboutUs() {
+      alert("Opening About Us...");
+      window.location.href = "about.html";
+    }
+
+    function logout() {
+      alert("Logged out successfully!");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
