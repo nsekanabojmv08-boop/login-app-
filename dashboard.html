@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      color: green;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Welcome to Dashboard</h1>
+<p>You have successfully logged in.</p>
+
+<div class="box">
+  <h2>User Area</h2>
+  <p>This is your dashboard page</p>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+function logout() {
+  alert("You logged out!");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
